@@ -1,0 +1,201 @@
+sku,name,description,category,unit,unit_price,keywords
+HSC-PAV-001,Standard Concrete Paver 4x8,"Basic gray or tan concrete paver, installed on aggregate base",hardscape,sqft,14.50,paver|concrete paver|patio|standard paver
+HSC-PAV-002,Premium Tumbled Concrete Paver,"Tumbled finish, multi-tone, installed",hardscape,sqft,18.00,paver|tumbled|premium paver|patio
+HSC-PAV-003,Belgard Holland Stone Paver,Belgard brand standard interlocking,hardscape,sqft,16.50,belgard|holland stone|paver
+HSC-PAV-004,Belgard Mega-Arbel Paver,"Large-format Belgard, modern look",hardscape,sqft,22.00,belgard|mega arbel|large paver|modern paver
+HSC-PAV-005,Travertine Paver Standard 16x24,"Tumbled travertine, installed",hardscape,sqft,24.00,travertine|natural stone|premium paver
+HSC-PAV-006,Travertine Paver French Pattern,Mixed-size French-pattern travertine,hardscape,sqft,28.00,travertine|french pattern|premium paver|natural stone
+HSC-PAV-007,Flagstone Arizona Buckskin,"Natural Arizona flagstone, dry-laid",hardscape,sqft,22.00,flagstone|natural stone|buckskin|arizona stone
+HSC-PAV-008,Flagstone Mortared Install,Flagstone with mortar joints on slab,hardscape,sqft,28.00,flagstone|mortared|natural stone|patio
+HSC-PAV-009,Porcelain Paver 24x24,"Large-format porcelain tile, exterior grade",hardscape,sqft,32.00,porcelain|large format|modern paver|patio
+HSC-PAV-010,Permeable Paver System,Permeable interlocking paver system,hardscape,sqft,19.50,permeable|eco paver|drainage paver
+HSC-PAV-011,Paver Sealing and Joint Sand,Polymeric sand plus sealer application,hardscape,sqft,2.25,paver sealing|polymeric sand|sealer
+HSC-PAV-012,Paver Removal and Disposal,Demo of existing pavers,hardscape,sqft,4.50,paver removal|demo|disposal
+HSC-CON-001,Standard Broom Finish Concrete,"4 inch pad, broom finish",hardscape,sqft,9.00,concrete|broom finish|pad|slab
+HSC-CON-002,Stamped Concrete Single Color,Stamped pattern with integral color,hardscape,sqft,14.00,stamped concrete|decorative concrete
+HSC-CON-003,Stamped Concrete Multi-Color,Multi-color stamped with release agent,hardscape,sqft,17.50,stamped concrete|multi color|decorative
+HSC-CON-004,Exposed Aggregate Concrete,Exposed aggregate finish,hardscape,sqft,13.00,exposed aggregate|concrete finish
+HSC-CON-005,Acid Stained Concrete,Acid stain on new or existing pour,hardscape,sqft,8.50,acid stain|stained concrete|concrete finish
+HSC-CON-006,Concrete Demolition and Haul-off,Sawcut and remove existing concrete,hardscape,sqft,6.50,concrete demo|sawcut|removal
+HSC-CON-007,Concrete Sealer Application,Penetrating sealer,hardscape,sqft,1.75,concrete sealer|sealer
+HSC-CON-008,Decorative Saw Cuts,Patterned saw cuts in concrete,hardscape,lf,4.00,saw cuts|decorative cuts|concrete
+HSC-WAL-001,CMU Block Wall Stucco Finish,"Standard 6 ft CMU wall, stuccoed",hardscape,lf,145.00,block wall|cmu|stucco wall|retaining wall
+HSC-WAL-002,Belgard Anchor Diamond Pro Wall,Segmental retaining wall block,hardscape,lf,95.00,anchor diamond|belgard wall|segmental wall
+HSC-WAL-003,Natural Stone Veneer on Block,Stone veneer over CMU wall,hardscape,sqft,38.00,stone veneer|wall facing|decorative wall
+HSC-WAL-004,Dry-Stack Stone Wall,"Dry-laid natural stone, up to 3 ft",hardscape,lf,110.00,dry stack|natural stone wall|low wall
+HSC-WAL-005,Seat Wall Capped 18in,18 inch seat wall with stone cap,hardscape,lf,165.00,seat wall|low wall|capped wall
+HSC-WAL-006,Planter Wall 2ft Height,"Block planter wall, stuccoed",hardscape,lf,125.00,planter wall|raised planter
+HSC-WAL-007,Wall Cap Cast Concrete,Cast concrete wall cap,hardscape,lf,28.00,wall cap|cap stone
+HSC-WAL-008,Wall Cap Natural Stone,Natural flagstone wall cap,hardscape,lf,42.00,natural stone cap|flagstone cap
+HSC-WAL-009,Steel Edging Powder Coated,Coyote or Sure-Loc steel landscape edging,hardscape,lf,22.00,steel edging|landscape edging
+HSC-WAL-010,Concrete Curb Mow Strip,6 inch concrete mow strip curb,hardscape,lf,18.00,mow strip|concrete curb|edging
+HSC-FPT-001,Custom Gas Fire Pit Round 42in,"Custom CMU fire pit, gas, with cap",hardscape,each,4200.00,fire pit|gas fire pit|fire feature|round fire pit
+HSC-FPT-002,Custom Gas Fire Pit Square 48in,"Square custom fire pit, gas",hardscape,each,4800.00,fire pit|square fire pit|gas fire pit
+HSC-FPT-003,Custom Wood-Burning Fire Pit,Wood-burning masonry fire pit,hardscape,each,3200.00,wood fire pit|wood burning|fire pit
+HSC-FPT-004,Fire Pit Pre-Cast Bowl with Gas,"Pre-cast concrete bowl, gas insert",hardscape,each,2400.00,fire bowl|precast fire pit|gas bowl
+HSC-FPT-005,Outdoor Fireplace Standard Gas,"Single-sided gas fireplace, 6 ft",hardscape,each,14500.00,outdoor fireplace|gas fireplace|fireplace
+HSC-FPT-006,Outdoor Fireplace Premium Stone,"Stone-faced fireplace, larger",hardscape,each,22000.00,premium fireplace|stone fireplace
+HSC-FPT-007,Fire Pit Gas Line Connection,Run gas line to fire feature,hardscape,each,850.00,gas line|fire pit gas|gas connection
+HSC-FPT-008,Fire Pit Glass Media,Tempered fire-glass fill,hardscape,each,320.00,fire glass|fire pit media|glass beads
+HSC-PRG-001,Aluminum Pergola 10x12,Powder-coated aluminum pergola,hardscape,each,7800.00,pergola|aluminum pergola|shade structure
+HSC-PRG-002,Aluminum Pergola 12x16,Larger powder-coated aluminum pergola,hardscape,each,11500.00,pergola|aluminum pergola|large pergola
+HSC-PRG-003,Aluminum Louvered Pergola 10x12,Motorized louvered roof pergola,hardscape,each,18500.00,louvered pergola|motorized pergola|smart pergola
+HSC-PRG-004,Wood Pergola Cedar 10x12,Stained cedar pergola,hardscape,each,9500.00,cedar pergola|wood pergola
+HSC-PRG-005,Wood Pergola Cedar 12x16,Larger cedar pergola,hardscape,each,14000.00,cedar pergola|wood pergola|large pergola
+HSC-PRG-006,Shade Sail Triangle Custom,Custom commercial-grade shade sail,hardscape,each,2400.00,shade sail|sun shade|triangle shade
+HSC-PRG-007,Patio Cover Solid Roof 12x14,Solid insulated alumawood cover,hardscape,each,9800.00,patio cover|solid cover|alumawood cover
+HSC-PRG-008,Ramada CMU Columns Wood Beams,Custom ramada structure,hardscape,each,28000.00,ramada|patio structure|custom shade
+HSC-PRG-009,Pergola Ceiling Fan,Outdoor-rated ceiling fan with electrical,hardscape,each,720.00,ceiling fan|outdoor fan|pergola fan
+HSC-PRG-010,Pergola Lighting Package,LED strip plus downlights for pergola,hardscape,each,1100.00,pergola lighting|led lighting|shade lighting
+HSC-KIT-001,Outdoor Kitchen Island 8ft Base,"CMU island, stucco, granite top",hardscape,each,8500.00,outdoor kitchen|bbq island|kitchen island
+HSC-KIT-002,Outdoor Kitchen Island L-Shape 10ft,L-shaped CMU outdoor kitchen,hardscape,each,12500.00,outdoor kitchen|l shape kitchen|bbq island
+HSC-KIT-003,Outdoor Kitchen Island U-Shape 12ft,Full U-shape outdoor kitchen,hardscape,each,18500.00,outdoor kitchen|u shape kitchen|large kitchen
+HSC-KIT-004,Built-In BBQ Standard 36in,"Stainless 36 inch gas grill, built-in",hardscape,each,1850.00,bbq|grill|built in grill
+HSC-KIT-005,Built-In BBQ Premium 40in+,Premium grill (Lynx or Hestan tier),hardscape,each,4200.00,premium bbq|lynx grill|hestan|high end grill
+HSC-KIT-006,Side Burner Built-In,Built-in side burner,hardscape,each,650.00,side burner|bbq accessory
+HSC-KIT-007,Outdoor Refrigerator Built-In,Stainless outdoor refrigerator,hardscape,each,1450.00,outdoor fridge|bbq fridge
+HSC-KIT-008,Kegerator Built-In,Built-in outdoor kegerator,hardscape,each,2200.00,kegerator|outdoor kegerator
+HSC-KIT-009,Granite Countertop,Granite slab on outdoor kitchen,hardscape,sqft,95.00,granite|countertop|kitchen countertop
+HSC-KIT-010,Quartzite Countertop,Quartzite slab on outdoor kitchen,hardscape,sqft,140.00,quartzite|countertop|premium countertop
+HSC-KIT-011,Pizza Oven Built-In Gas,"Gas-fired pizza oven, built-in",hardscape,each,5800.00,pizza oven|gas pizza|outdoor pizza oven
+HSC-KIT-012,Stone Veneer for Kitchen Island,Decorative stone facing on island,hardscape,sqft,36.00,kitchen veneer|stone facing|island facing
+LND-TRE-001,Date Palm 8ft Trunk,Medjool or similar 8 ft trunk,landscape,each,2400.00,palm|date palm|medjool|palm tree
+LND-TRE-002,Date Palm 12ft Trunk,Larger specimen date palm,landscape,each,4800.00,large palm|date palm|specimen palm
+LND-TRE-003,Mediterranean Fan Palm,Multi-trunk fan palm,landscape,each,850.00,fan palm|mediterranean palm
+LND-TRE-004,Mexican Fan Palm 10ft,Single-trunk Mexican fan palm,landscape,each,380.00,mexican palm|fan palm
+LND-TRE-005,Desert Museum Palo Verde 24in Box,Native shade tree,landscape,each,320.00,palo verde|desert museum|native tree
+LND-TRE-006,Tipu Tree 36in Box,Large shade tree,landscape,each,580.00,tipu tree|shade tree|36 inch box
+LND-TRE-007,Chilean Mesquite 36in Box,Native chilean mesquite,landscape,each,490.00,mesquite|native tree|chilean mesquite
+LND-TRE-008,Olive Tree Multi-Trunk Specimen,"Sterile olive, mature specimen",landscape,each,1850.00,olive tree|olive|specimen
+LND-TRE-009,Citrus Tree 24in Box,"Lemon, lime, or orange citrus tree",landscape,each,240.00,citrus|lemon|orange|lime|fruit tree
+LND-TRE-010,Tree Removal Standard,Removal of tree up to 20 ft,landscape,each,450.00,tree removal|tree demo
+LND-SHR-001,Bougainvillea 5gal,Standard 5 gallon bougainvillea,landscape,each,32.00,bougainvillea|flowering shrub
+LND-SHR-002,Bougainvillea 15gal,Larger bougainvillea specimen,landscape,each,95.00,bougainvillea|large shrub
+LND-SHR-003,Texas Sage 5gal,Drought-tolerant flowering sage,landscape,each,28.00,texas sage|sage shrub
+LND-SHR-004,Red Bird of Paradise 5gal,Native flowering shrub,landscape,each,26.00,bird of paradise|flowering shrub
+LND-SHR-005,Lantana 1gal,Flowering ground cover,landscape,each,9.50,lantana|ground cover
+LND-SHR-006,Yellow Bells 5gal,Native flowering shrub,landscape,each,28.00,yellow bells|esperanza|flowering
+LND-SHR-007,Saguaro Cactus 4-5ft,Salvaged saguaro with permit,landscape,each,1450.00,saguaro|cactus|specimen cactus
+LND-SHR-008,Golden Barrel Cactus 18in,Specimen golden barrel cactus,landscape,each,220.00,golden barrel|barrel cactus
+LND-SHR-009,Agave Americana 15gal,Large agave americana,landscape,each,85.00,agave|americana|century plant
+LND-SHR-010,Agave Blue Glow 5gal,Designer blue glow agave,landscape,each,65.00,blue glow|designer agave
+LND-SHR-011,Hesperaloe Red Yucca 5gal,Flowering red yucca,landscape,each,24.00,red yucca|hesperaloe|yucca
+LND-SHR-012,Dwarf Oleander 5gal,Hedge shrub,landscape,each,26.00,oleander|hedge shrub
+LND-GND-001,Decomposed Granite Installed,"DG ground cover, 2 inch depth",landscape,sqft,2.50,dg|decomposed granite|gravel
+LND-GND-002,River Rock 1-3in,Decorative river rock,landscape,ton,185.00,river rock|decorative rock
+LND-GND-003,Crushed Granite Premium Color,Premium-color crushed granite,landscape,sqft,3.20,crushed granite|premium gravel|desert landscape
+LND-GND-004,Bermuda Sod Installed,Tifway 419 bermuda sod,landscape,sqft,3.50,bermuda|sod|grass
+LND-GND-005,Premium Hybrid Bermuda Sod,Higher-grade hybrid bermuda,landscape,sqft,4.20,premium sod|hybrid bermuda
+LND-GND-006,Wood Mulch 3in Depth,Bark mulch installed,landscape,sqft,1.80,mulch|bark mulch
+LND-PRP-001,Soil Amendment and Tilling,Per sqft of bed prep,landscape,sqft,1.40,soil prep|soil amendment|tilling
+LND-PRP-002,Topsoil Import 4in,Imported topsoil delivered and spread,landscape,sqft,2.20,topsoil|imported soil
+LND-PRP-003,Compost Application,Compost mixed into beds,landscape,sqft,0.95,compost|soil enrichment
+LND-PRP-004,Grade and Site Prep,Per sqft yard grading,landscape,sqft,1.85,grading|site prep|leveling
+LND-PRP-005,Boulder Placement Small Under 200lb,Decorative small boulder placement,landscape,each,180.00,boulder|decorative rock|small boulder
+LND-PRP-006,Boulder Placement Medium 500lb,Medium boulder placement with machine,landscape,each,420.00,medium boulder|boulder placement
+LND-PRP-007,Boulder Placement Large 1000lb+,Large boulder placement with equipment,landscape,each,850.00,large boulder|boulder placement|specimen boulder
+LND-PRP-008,Weed Barrier Fabric Pro Grade,Pro-grade weed barrier installed,landscape,sqft,0.65,weed barrier|fabric|landscape fabric
+LND-PRP-009,Sod Removal Existing Lawn,Remove existing turf,landscape,sqft,1.50,sod removal|lawn demo
+LND-PRP-010,Landscape Demolition,Vegetation and rock removal,landscape,sqft,2.20,landscape demo|demo|removal
+LND-PRP-011,Plant Warranty 1 Year,Plant material warranty add-on,landscape,each,0.00,warranty|plant warranty
+LND-PRP-012,Design Fee Conceptual,Initial design plus render fee,landscape,each,1500.00,design fee|conceptual design|planning
+IRR-DRP-001,Drip Line Half-Inch Polyethylene,Per linear foot of drip tubing installed,irrigation,lf,3.20,drip line|drip irrigation|half inch tubing
+IRR-DRP-002,Drip Emitter 1gph,Individual 1 gph emitter,irrigation,each,4.50,emitter|drip emitter|1gph
+IRR-DRP-003,Drip Emitter 2gph,Individual 2 gph emitter,irrigation,each,4.75,emitter|2gph|drip
+IRR-DRP-004,Bubbler Emitter Adjustable,Adjustable tree bubbler,irrigation,each,9.50,bubbler|tree bubbler|adjustable emitter
+IRR-DRP-005,Drip Zone Valve Kit,Filter plus pressure regulator plus valve,irrigation,each,145.00,drip valve|drip zone
+IRR-DRP-006,Drip Pressure Regulator,Inline drip pressure regulator,irrigation,each,32.00,pressure regulator|drip pressure
+IRR-DRP-007,Drip Filter Inline,Inline mesh filter,irrigation,each,28.00,drip filter|inline filter
+IRR-DRP-008,Drip Tubing Quarter-Inch Distribution,Distribution tubing for emitters,irrigation,lf,1.20,quarter inch tubing|distribution tubing|drip
+IRR-DRP-009,In-Line Drip Tape Subsurface,Subsurface drip for planting beds,irrigation,lf,4.50,subsurface drip|in line drip|inline drip
+IRR-DRP-010,Drip System Retrofit,Convert existing spray to drip,irrigation,each,380.00,drip retrofit|convert to drip
+IRR-SPR-001,Rotor Head 4in Pop-Up,Hunter or Rainbird rotor,irrigation,each,78.00,rotor|sprinkler head|pop up rotor
+IRR-SPR-002,Spray Head 4in Pop-Up,Spray head with nozzle,irrigation,each,38.00,spray head|pop up|sprinkler
+IRR-SPR-003,MP Rotator Nozzle,Efficient rotary nozzle,irrigation,each,18.00,mp rotator|rotary nozzle|water saving
+IRR-SPR-004,Sprinkler Zone Valve,Inline solenoid valve,irrigation,each,95.00,zone valve|sprinkler valve|solenoid valve
+IRR-SPR-005,Manifold Assembly 4 Valve,Pre-built 4-valve manifold,irrigation,each,480.00,manifold|valve manifold|sprinkler manifold
+IRR-SPR-006,Manifold Assembly 6 Valve,Pre-built 6-valve manifold,irrigation,each,680.00,manifold|large manifold|6 valve
+IRR-SPR-007,Lateral Line PVC Installed,Per linear foot lateral line,irrigation,lf,4.50,lateral line|sprinkler line|pvc
+IRR-SPR-008,Mainline PVC Installed,Per linear foot mainline,irrigation,lf,6.80,mainline|water line|pvc main
+IRR-CTR-001,Smart Controller 8 Zone,Rachio or Hunter Hydrawise 8-zone,irrigation,each,380.00,smart controller|rachio|wifi controller
+IRR-CTR-002,Smart Controller 16 Zone,16-zone smart wifi controller,irrigation,each,580.00,smart controller|16 zone|large controller
+IRR-CTR-003,Rain Sensor Wireless,Auto-shutoff wireless rain sensor,irrigation,each,145.00,rain sensor|wireless rain sensor
+IRR-CTR-004,Flow Sensor Mainline,Inline flow sensor for leak detection,irrigation,each,320.00,flow sensor|leak detection
+IRR-CTR-005,Master Valve,Inline master shutoff valve,irrigation,each,240.00,master valve
+IRR-CTR-006,Controller Programming and Setup,Programming and zone setup,irrigation,each,220.00,controller setup|programming
+IRR-MSC-001,Hose Bib Installation,New exterior hose bib,irrigation,each,280.00,hose bib|spigot|outdoor faucet
+IRR-MSC-002,Backflow Preventer Install,PVB or RPZ backflow install,irrigation,each,480.00,backflow|backflow preventer|pvb
+IRR-MSC-003,Irrigation Trenching,Per linear foot trenching,irrigation,lf,4.20,trenching|irrigation trench
+IRR-MSC-004,Quick Coupler Valve,Hose-connection point,irrigation,each,120.00,quick coupler|valve
+IRR-MSC-005,Irrigation Cap and Demo,Cap and abandon existing lines,irrigation,each,180.00,irrigation demo|cap lines
+IRR-MSC-006,Irrigation Audit and Repair,Diagnose and repair existing system,irrigation,hour,110.00,irrigation repair|audit|fix irrigation
+LGT-PTH-001,Path Light LED Bronze,"Bronze finish, 3W LED path light",lighting,each,145.00,path light|landscape light|low voltage
+LGT-PTH-002,Path Light LED Premium Brass,Brass or copper premium path light,lighting,each,240.00,premium path light|brass fixture|landscape light
+LGT-UPL-001,Up Light LED 4W Spot,Spike-mounted narrow-beam uplight,lighting,each,165.00,uplight|spotlight|landscape uplight
+LGT-UPL-002,Up Light LED 6W Wide Wash,Wide flood brass uplight,lighting,each,220.00,wide flood|uplight|wash light
+LGT-UPL-003,Up Light Tree Mounted Moonlight,Tree-mounted downlight,lighting,each,260.00,moonlight|tree mounted light|downlight
+LGT-WSH-001,Wall Wash Light LED Linear,Linear wall-wash light,lighting,each,285.00,wall wash|wash light|linear light
+LGT-WSH-002,Step Light Recessed LED,Recessed step or stair light,lighting,each,195.00,step light|recessed light|stair light
+LGT-WSH-003,Hardscape Light Wall Mount,Hardscape or seat-wall light,lighting,each,175.00,hardscape light|wall mount light
+LGT-POL-001,Pool or Pond Light LED,Submersible underwater accent light,lighting,each,380.00,pool light|underwater light|pond light
+LGT-POL-002,String Light Commercial Grade,Per linear foot bistro string lights,lighting,lf,14.00,string lights|bistro lights|patio lights
+LGT-TRF-001,Transformer 300W Multi-Tap,Magnetic 300W transformer,lighting,each,580.00,transformer|low voltage transformer|300 watt
+LGT-TRF-002,Transformer 600W Multi-Tap,Larger system 600W transformer,lighting,each,850.00,transformer|600 watt|large transformer
+LGT-TRF-003,Smart Lighting Controller,Wifi or app-controlled add-on,lighting,each,420.00,smart lighting|wifi lighting|app controlled lights
+LGT-WIR-001,Low Voltage Wire 12-2,Per linear foot 12-2 wire installed,lighting,lf,3.80,12 2 wire|low voltage wire|landscape wire
+LGT-WIR-002,Low Voltage Wire 10-2,Heavier-gauge wire for long runs,lighting,lf,4.60,10 2 wire|heavy gauge wire
+LGT-WIR-003,Wire Connector Waterproof,Per waterproof connector,lighting,each,8.00,wire connector|waterproof connector
+LGT-PNL-001,Electrical Sub Panel Outdoor,New outdoor sub panel install,lighting,each,1850.00,sub panel|electrical panel|outdoor electrical
+LGT-PNL-002,GFCI Outlet Outdoor,Weatherproof GFCI outdoor outlet,lighting,each,285.00,gfci|outdoor outlet|exterior outlet
+LGT-DES-001,Lighting Design Plan,Photometric lighting design,lighting,each,850.00,lighting design|lighting plan|photometric
+LGT-PRG-001,Lighting Scene Programming,Smart-system scene programming,lighting,each,320.00,lighting scenes|programming|smart lighting setup
+WTR-FNT-001,Bubbling Boulder Single,Single drilled boulder with pump,water_feature,each,1850.00,bubbling boulder|boulder fountain|water feature
+WTR-FNT-002,Bubbling Boulder Triple,Set of three drilled boulders,water_feature,each,3850.00,boulder fountain|triple boulder|water feature
+WTR-FNT-003,Urn Fountain Ceramic,Glazed ceramic urn with recirculating pump,water_feature,each,2200.00,urn fountain|ceramic fountain|patio fountain
+WTR-FNT-004,Cast Stone Tiered Fountain,3-tier cast stone fountain,water_feature,each,4800.00,tiered fountain|cast stone|formal fountain
+WTR-FNT-005,Wall Fountain Custom Stone,Custom stone wall fountain,water_feature,each,6500.00,wall fountain|custom fountain|water wall
+WTR-FNT-006,Sheer Descent Pool Spillway,Sheer waterfall spillway,water_feature,each,1800.00,sheer descent|water wall|pool spillway
+WTR-FNT-007,Pondless Waterfall 8ft,8 ft pondless disappearing waterfall,water_feature,each,5800.00,pondless waterfall|disappearing waterfall|stream
+WTR-FNT-008,Pondless Waterfall 16ft,Larger pondless waterfall stream,water_feature,each,9500.00,pondless waterfall|large waterfall|stream
+WTR-FNT-009,Koi Pond Small Under 500gal,Small koi pond with filtration,water_feature,each,7800.00,koi pond|small pond|fish pond
+WTR-FNT-010,Koi Pond Large 1000gal Plus,Large koi pond with biofilter,water_feature,each,14500.00,koi pond|large pond|fish pond
+WTR-FNT-011,Recirculating Pump Standard,Standard pump for small water feature,water_feature,each,380.00,pump|recirculating pump|fountain pump
+WTR-FNT-012,Recirculating Pump Variable Speed,Premium variable-speed pump,water_feature,each,780.00,variable speed pump|premium pump
+WTR-FNT-013,Water Feature Lighting Kit,Underwater LED lighting kit,water_feature,each,420.00,water feature lighting|fountain lights
+WTR-FNT-014,Auto-Fill Valve,Float valve for auto-fill,water_feature,each,240.00,auto fill|float valve|fountain auto fill
+WTR-FNT-015,Water Feature Plumbing,Plumbing rough-in for water feature,water_feature,each,580.00,water feature plumbing|fountain plumbing
+TRF-TRF-001,Artificial Turf Standard 70oz,Mid-grade 70oz turf installed,turf,sqft,12.50,artificial turf|fake grass|turf install
+TRF-TRF-002,Artificial Turf Premium 90oz,Heavier premium 90oz turf,turf,sqft,16.00,premium turf|heavy turf|artificial grass
+TRF-TRF-003,Artificial Turf Pet-Friendly,Pet turf with enhanced drainage,turf,sqft,17.50,pet turf|dog turf|k9 turf
+TRF-TRF-004,Artificial Turf Putting Green,Putting-green grade turf,turf,sqft,22.00,putting green|golf turf
+TRF-TRF-005,Turf Demolition Existing,Remove existing turf,turf,sqft,2.20,turf demo|turf removal
+TRF-TRF-006,Turf Base Prep Class II,4 inch compacted aggregate base,turf,sqft,3.80,turf base|aggregate base|class 2
+TRF-TRF-007,Turf Infill Silica Sand,Silica sand infill,turf,sqft,1.20,silica sand|turf infill
+TRF-TRF-008,Turf Infill Antimicrobial,Antimicrobial zeolite infill upgrade,turf,sqft,1.85,antimicrobial infill|zeolite infill|pet infill
+TRF-TRF-009,Turf Seam Tape and Adhesive,Per linear foot of seam,turf,lf,3.50,turf seam|turf adhesive
+TRF-TRF-010,Bender Board Turf Edging,Composite turf edging,turf,lf,8.50,bender board|turf edge|edging
+TRF-TRF-011,Putting Green Cup and Flag,Regulation cup with flag,turf,each,220.00,putting cup|golf cup|flag
+TRF-TRF-012,Turf Drainage Panel,Sub-turf drainage matrix,turf,sqft,2.40,turf drainage|drainage panel
+TRF-TRF-013,Putting Green Contouring,Custom green contour shaping,turf,sqft,4.50,green contouring|putting contour|golf contour
+TRF-TRF-014,Turf Warranty 8 Year Extended,Extended turf warranty add-on,turf,each,0.00,turf warranty|warranty
+TRF-TRF-015,Custom Turf Logo Inlay,Custom-cut turf logo inlay,turf,each,850.00,logo inlay|custom turf|turf logo
+LAB-DEM-001,General Demolition Labor,Per crew hour for demo,labor,hour,95.00,demolition|demo|labor
+LAB-DEM-002,Concrete Sawcutting,Per linear foot saw cut,labor,lf,8.50,sawcut|saw cutting|concrete cut
+LAB-DEM-003,Haul-Off and Disposal,Per 14 yard dump load,labor,each,580.00,haul off|dump fee|disposal
+LAB-EXC-001,Excavation Mini Excavator,Mini-ex equipment plus operator per day,labor,each,980.00,excavation|mini excavator|small machine
+LAB-EXC-002,Excavation Skid Steer,Skid steer plus operator per day,labor,each,820.00,skid steer|bobcat|excavation
+LAB-EXC-003,Hand Excavation,Crew labor for hand digging,labor,hour,85.00,hand excavation|hand dig|labor
+LAB-PRM-001,Permit Pull Standard,Permit acquisition including admin,labor,each,480.00,permit|permit fee|permit pull
+LAB-PRM-002,HOA Submission Package,HOA package preparation and submittal,labor,each,350.00,hoa|hoa package|hoa submission
+LAB-PRM-003,Engineered Drawings Structural,Structural engineering drawings,labor,each,1850.00,engineering|structural drawings|engineered plans
+LAB-DES-001,2D Plan View Design,Plan-view 2D design,labor,each,850.00,2d design|plan view|site plan
+LAB-DES-002,3D Render Standard,Single 3D render of design,labor,each,1200.00,3d render|3d design|render
+LAB-DES-003,3D Render Photorealistic,Premium photorealistic render,labor,each,2400.00,photorealistic render|premium render|vray
+LAB-DES-004,Design Revisions Per Round,Per round of design revisions,labor,each,280.00,design revisions|revision round
+LAB-MAN-001,Project Management Fee,Standard PM overhead included,labor,each,0.00,project management|pm fee|management
+LAB-MAN-002,Crew Mobilization,Per project mobilization,labor,each,480.00,mobilization|crew mob
+LAB-MAN-003,Final Walk-Through,Final inspection labor,labor,each,220.00,walk through|final inspection
+LAB-MAN-004,Punch List Labor,Post-completion punch list work,labor,hour,105.00,punch list|touch up
+LAB-CLN-001,Site Cleanup Final,Final site cleanup,labor,each,380.00,site cleanup|final cleanup
+LAB-CLN-002,Daily Site Cleanup,Per day during build,labor,each,120.00,daily cleanup|site cleanup
+LAB-OTH-001,Premium Tier Surcharge,10 percent premium for white-glove tier,labor,each,0.00,premium tier|white glove|surcharge
