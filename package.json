@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3030",
+    "dev": "bash -c 'set -a; [ -f ./.env ] && source ./.env; set +a; next dev -p 3030'",
     "build": "next build",
-    "start": "next start -p 3030",
+    "start": "bash -c 'set -a; [ -f ./.env ] && source ./.env; set +a; next start -p 3030'",
     "lint": "eslint",
-    "seed": "tsx scripts/seed.ts"
+    "seed": "bash -c 'set -a; [ -f ./.env ] && source ./.env; set +a; tsx scripts/seed.ts'"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.99.0",
