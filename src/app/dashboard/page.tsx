@@ -25,7 +25,7 @@ interface ProposalRow {
 export interface PendingSiteWalk {
   id: string;
   transcription_status: TranscriptionStatus;
-  walked_at: string;
+  walked_at_display: string;
   client_full_name: string;
 }
 
@@ -99,7 +99,8 @@ export default async function DashboardPage() {
     .map((sw) => ({
       id: sw.id,
       transcription_status: sw.transcription_status,
-      walked_at: sw.walked_at,
+      // Formatted server-side to avoid client/server locale hydration mismatch.
+      walked_at_display: new Date(sw.walked_at).toISOString().slice(0, 16).replace("T", " "),
       client_full_name: sw.clients?.full_name ?? "Unknown client",
     }));
 

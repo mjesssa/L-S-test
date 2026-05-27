@@ -13,15 +13,6 @@ import {
 } from "@/components/ui/card";
 import type { PendingSiteWalk } from "./page";
 
-function formatDate(value: string): string {
-  return new Date(value).toLocaleString("en-US", {
-    month: "short",
-    day: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-  });
-}
-
 function tone(status: PendingSiteWalk["transcription_status"]) {
   if (status === "failed")
     return "bg-rose-100 text-rose-900 border-rose-200";
@@ -89,7 +80,7 @@ export function PendingSiteWalksClient({
               <div className="space-y-1">
                 <p className="font-medium">{sw.client_full_name}</p>
                 <p className="text-xs text-muted-foreground">
-                  Captured {formatDate(sw.walked_at)}
+                  Captured {sw.walked_at_display} UTC
                 </p>
               </div>
               <div className="flex items-center gap-2">
