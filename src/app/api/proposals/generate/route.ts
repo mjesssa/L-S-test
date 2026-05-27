@@ -74,42 +74,71 @@ export async function POST(request: Request) {
     );
   }
 
-  // If a proposal already exists for this site walk, return it.
+  // Re-use an existing proposal for this site walk if it's not yet finished.
+  // Idempotent: lets the user retry from the dashboard without spawning dupes.
   const { data: existing } = await service
     .from("proposals")
     .select("id, status")
     .eq("site_walk_id", site_walk_id)
     .limit(1)
     .returns<Array<{ id: string; status: string }>>();
-  if (existing && existing.length > 0) {
-    return NextResponse.json({
-      proposal_id: existing[0].id,
-      status: existing[0].status,
-      note: "proposal already exists for this site walk",
-    });
-  }
 
-  // Create the draft proposal up-front so AI actions can be attributed.
-  const draftInsert = {
-    site_walk_id,
-    client_id: siteWalk.client_id,
-    status: "drafting" as const,
-    flags: [] as unknown as never,
-  };
-  const { data: draft, error: draftError } = await service
-    .from("proposals")
-    .insert(draftInsert as never)
-    .select("id")
-    .single<{ id: string }>();
-  if (draftError || !draft) {
-    return NextResponse.json(
-      {
-        error: `Draft proposal insert failed: ${draftError?.message ?? "unknown"}`,
-      },
-      { status: 500 },
-    );
+  let proposal_id: string;
+  if (existing && existing.length > 0) {
+    const e = existing[0];
+    if (
+      e.status === "needs_review" ||
+      e.status === "approved" ||
+      e.status === "sent"
+    ) {
+      return NextResponse.json({
+        proposal_id: e.id,
+        status: e.status,
+        note: "proposal already finalised; not regenerating",
+      });
+    }
+    // status is drafting or rejected — wipe any prior line items and retry.
+    await service
+      .from("proposal_line_items")
+      .delete()
+      .eq("proposal_id", e.id);
+    await service
+      .from("proposals")
+      .update({
+        status: "drafting" as const,
+        flags: [] as unknown as never,
+        subtotal: null,
+        tax: 0,
+        total: null,
+        confidence_score: null,
+        proposal_md: null,
+        needs_render: false,
+        high_value_block: false,
+      } as never)
+      .eq("id", e.id);
+    proposal_id = e.id;
+  } else {
+    const draftInsert = {
+      site_walk_id,
+      client_id: siteWalk.client_id,
+      status: "drafting" as const,
+      flags: [] as unknown as never,
+    };
+    const { data: draft, error: draftError } = await service
+      .from("proposals")
+      .insert(draftInsert as never)
+      .select("id")
+      .single<{ id: string }>();
+    if (draftError || !draft) {
+      return NextResponse.json(
+        {
+          error: `Draft proposal insert failed: ${draftError?.message ?? "unknown"}`,
+        },
+        { status: 500 },
+      );
+    }
+    proposal_id = draft.id;
   }
-  const proposal_id = draft.id;
 
   // 1) Extract scope from transcription.
   let extraction;

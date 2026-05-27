@@ -17,6 +17,7 @@ import { ProposalActions } from "./proposal-actions";
 
 interface ProposalRow {
   id: string;
+  site_walk_id: string | null;
   status: ProposalStatus;
   subtotal: number | null;
   tax: number | null;
@@ -91,7 +92,7 @@ export default async function ProposalReviewPage({ params }: PageProps) {
   const { data: proposal, error } = await service
     .from("proposals")
     .select(
-      "id,status,subtotal,tax,total,proposal_md,pdf_url,stripe_payment_link,needs_render,high_value_block,confidence_score,flags,approved_at,sent_at,created_at,clients(full_name,email,address),site_walks(transcription)",
+      "id,site_walk_id,status,subtotal,tax,total,proposal_md,pdf_url,stripe_payment_link,needs_render,high_value_block,confidence_score,flags,approved_at,sent_at,created_at,clients(full_name,email,address),site_walks(transcription)",
     )
     .eq("id", id)
     .single<ProposalRow>();
@@ -185,6 +186,7 @@ export default async function ProposalReviewPage({ params }: PageProps) {
         proposalId={proposal.id}
         status={status}
         highValueBlock={proposal.high_value_block}
+        siteWalkId={proposal.site_walk_id}
       />
 
       <div className="grid gap-6 lg:grid-cols-2">

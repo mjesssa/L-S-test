@@ -9,15 +9,23 @@ interface Props {
   proposalId: string;
   status: string;
   highValueBlock: boolean;
+  siteWalkId: string | null;
 }
 
-export function ProposalActions({ proposalId, status, highValueBlock }: Props) {
+export function ProposalActions({
+  proposalId,
+  status,
+  highValueBlock,
+  siteWalkId,
+}: Props) {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
+  const [regenerating, setRegenerating] = useState(false);
 
   const isReviewable = status === "needs_review" || status === "drafting";
+  const isDraftStuck = status === "drafting" || status === "rejected";
   const isApproved = status === "approved";
 
   function approve() {
@@ -37,6 +45,27 @@ export function ProposalActions({ proposalId, status, highValueBlock }: Props) {
       if (!res.ok) setError(res.error);
       else router.refresh();
     });
+  }
+
+  async function regenerate() {
+    if (!siteWalkId) return;
+    setRegenerating(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/proposals/generate", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ site_walk_id: siteWalkId }),
+      });
+      const json = await res.json();
+      if (!res.ok)
+        throw new Error(json.error ?? `Regenerate failed (${res.status})`);
+      router.refresh();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Regenerate failed");
+    } finally {
+      setRegenerating(false);
+    }
   }
 
   async function send() {
@@ -68,6 +97,15 @@ export function ProposalActions({ proposalId, status, highValueBlock }: Props) {
               Reject
             </Button>
           </>
+        ) : null}
+        {isDraftStuck && siteWalkId ? (
+          <Button
+            variant="outline"
+            onClick={regenerate}
+            disabled={regenerating || pending}
+          >
+            {regenerating ? "Regenerating…" : "Regenerate"}
+          </Button>
         ) : null}
         {isApproved ? (
           <Button

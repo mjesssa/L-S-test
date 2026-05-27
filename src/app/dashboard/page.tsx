@@ -9,7 +9,8 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/server";
-import type { Json, ProposalStatus } from "@/types/db";
+import type { Json, ProposalStatus, TranscriptionStatus } from "@/types/db";
+import { PendingSiteWalksClient } from "./pending-site-walks";
 
 interface ProposalRow {
   id: string;
@@ -19,6 +20,13 @@ interface ProposalRow {
   created_at: string;
   flags: Json | null;
   clients: { full_name: string } | null;
+}
+
+export interface PendingSiteWalk {
+  id: string;
+  transcription_status: TranscriptionStatus;
+  walked_at: string;
+  client_full_name: string;
 }
 
 const STATUS_GROUPS: { status: ProposalStatus; label: string; tone: string }[] =
@@ -58,6 +66,43 @@ export default async function DashboardPage() {
     .order("created_at", { ascending: false })
     .returns<ProposalRow[]>();
 
+  // Site walks that don't have a proposal in needs_review / approved / sent yet
+  // — i.e. transcription pending/failed, or transcribed but generation hasn't
+  // produced a real proposal. Surfaces stuck/failed runs with a retry path.
+  const { data: rawSiteWalks } = await supabase
+    .from("site_walks")
+    .select(
+      "id, transcription_status, walked_at, clients(full_name), proposals(id,status)",
+    )
+    .order("walked_at", { ascending: false })
+    .limit(20)
+    .returns<
+      Array<{
+        id: string;
+        transcription_status: TranscriptionStatus;
+        walked_at: string;
+        clients: { full_name: string } | null;
+        proposals: Array<{ id: string; status: ProposalStatus }> | null;
+      }>
+    >();
+
+  const pendingSiteWalks: PendingSiteWalk[] = (rawSiteWalks ?? [])
+    .filter((sw) => {
+      const hasFinalProposal = (sw.proposals ?? []).some(
+        (p) =>
+          p.status === "needs_review" ||
+          p.status === "approved" ||
+          p.status === "sent",
+      );
+      return !hasFinalProposal;
+    })
+    .map((sw) => ({
+      id: sw.id,
+      transcription_status: sw.transcription_status,
+      walked_at: sw.walked_at,
+      client_full_name: sw.clients?.full_name ?? "Unknown client",
+    }));
+
   if (error) {
     return (
       <Card>
@@ -76,7 +121,7 @@ export default async function DashboardPage() {
 
   const totalCount = proposals?.length ?? 0;
 
-  if (totalCount === 0) {
+  if (totalCount === 0 && pendingSiteWalks.length === 0) {
     return (
       <div className="space-y-6">
         <header>
@@ -112,6 +157,10 @@ export default async function DashboardPage() {
           </p>
         </div>
       </header>
+
+      {pendingSiteWalks.length > 0 ? (
+        <PendingSiteWalksClient siteWalks={pendingSiteWalks} />
+      ) : null}
 
       {grouped.map((group) => (
         <section key={group.status} className="space-y-3">
