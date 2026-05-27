@@ -239,5 +239,6 @@ export interface Database {
       ai_action_type: AiActionType;
       pricing_category: PricingCategory;
     };
+    CompositeTypes: Record<string, never>;
   };
 }
