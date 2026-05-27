@@ -1,12 +1,13 @@
 {
-  "name": "scaffold",
+  "name": "quote-acceleration-agent",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.99.0",
