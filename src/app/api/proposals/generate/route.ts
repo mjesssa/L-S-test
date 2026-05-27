@@ -6,6 +6,7 @@ import {
   matchPricingItem,
   type PricingCatalogItem,
 } from "@/lib/ai/match-pricing";
+import { writeProposal } from "@/lib/ai/write-proposal";
 
 export const runtime = "nodejs";
 export const maxDuration = 300;
@@ -320,6 +321,43 @@ export async function POST(request: Request) {
     );
   }
 
+  // Look up the client for the write-up prompt.
+  const { data: client } = await service
+    .from("clients")
+    .select("full_name, address")
+    .eq("id", siteWalk.client_id)
+    .single<{ full_name: string; address: string | null }>();
+
+  // Generate the markdown proposal. If this fails we still persist the
+  // computed line items + flags; reviewer can retry later.
+  let proposalMarkdown: string | null = null;
+  let writeError: string | null = null;
+  try {
+    const result = await writeProposal({
+      client_name: client?.full_name ?? "Customer",
+      client_address: client?.address ?? null,
+      scope_summary_hint: null,
+      line_items: lineDrafts.map((l) => ({
+        scope_description: l.scope_description,
+        matched_name: l.matched_name,
+        quantity: l.quantity,
+        unit: l.unit,
+        unit_price: l.unit_price,
+        line_total: l.line_total,
+      })),
+      subtotal,
+      tax,
+      total,
+      flags: aggregatedFlags,
+      proposal_id,
+      site_walk_id,
+    });
+    proposalMarkdown = result.markdown;
+  } catch (err) {
+    writeError = err instanceof Error ? err.message : String(err);
+    aggregatedFlags.push(`Proposal write-up failed: ${writeError}`);
+  }
+
   // Update the proposal row with the computed numbers and move to needs_review.
   const proposalUpdate = {
     status: "needs_review" as const,
@@ -330,6 +368,7 @@ export async function POST(request: Request) {
     flags: aggregatedFlags as unknown as never,
     needs_render,
     high_value_block,
+    proposal_md: proposalMarkdown,
   };
   const { error: updateError } = await service
     .from("proposals")
@@ -353,5 +392,6 @@ export async function POST(request: Request) {
     confidence_score: weightedConfidence,
     line_items: lineDrafts.length,
     flags: aggregatedFlags,
+    write_error: writeError,
   });
 }
