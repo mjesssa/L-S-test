@@ -2,7 +2,6 @@
 
 > **Deployed URL:** https://l-s-test.vercel.app
 > **GitHub:** https://github.com/mjesssa/L-S-test
-> **Loom walkthrough:** _(added after recording)_
 
 Turns a contractor's site-walk voice memo into a sent customer proposal in under 24 hours, with mandatory human approval before any external send. Built for the License & Scale AI Developer take-home (client: Greenscape Pro, Phoenix AZ).
 
